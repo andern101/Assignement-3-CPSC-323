@@ -1,0 +1,32 @@
+File to be opened: sample3.txt
+Source Code:
+$$
+int max;
+max =3;
+while(max<5)
+{
+max = max + 1;
+}
+$$
+
+
+Symbol Table:
+Lexeme                 	Memory Address                       Type
+----------------------------------------------------------------------------------
+  max                          5000                           int
+
+Instruction Table:
+Instruction Address            	OP                          OPRND
+----------------------------------------------------------------------------------
+    1                          POPM                          5000
+    2                         PUSHI                             3
+    3                         LABEL                           nil
+    4                         PUSHM                          5000
+    5                           LES                           nil
+    6                         JUMPZ                            13
+    7                         PUSHI                             5
+    8                          POPM                          5000
+    9                         PUSHM                          5000
+   10                         PUSHI                             1
+   11                           ADD                           nil
+   12                          JUMP                             3

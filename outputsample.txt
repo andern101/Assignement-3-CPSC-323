@@ -1,0 +1,18 @@
+File to be opened: sample.txt
+Source Code:
+int ax, b, cx;
+ax + b = cx
+
+
+Symbol Table:
+Lexeme                 	Memory Address                       Type
+----------------------------------------------------------------------------------
+   ax                          5000                           int
+    b                          5001                           int
+   cx                          5002                           int
+
+Instruction Table:
+Instruction Address            	OP                          OPRND
+----------------------------------------------------------------------------------
+    1                          POPM                          5001
+    2                         PUSHM                          5002

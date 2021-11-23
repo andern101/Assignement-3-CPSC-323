@@ -1,0 +1,8 @@
+$$
+int max;
+max =3;
+while(max<5)
+{
+max = max + 1;
+}
+$$

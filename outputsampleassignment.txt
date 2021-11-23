@@ -1,0 +1,54 @@
+File to be opened: sampleassignment.txt
+Source Code:
+    /* this is comment for this sample code 
+         for assignment 3  */
+
+    $$
+    int      i, max, sum;    /* declarations */
+
+    sum = 0;
+    i = 1;
+    get ( max);
+    while (i <  max)  {
+          sum = sum + i;
+          i  = i + 1; 
+     }
+     put (sum + max);
+     $$
+
+
+
+Symbol Table:
+Lexeme                 	Memory Address                       Type
+----------------------------------------------------------------------------------
+    i                          5000                           int
+  max                          5001                           int
+  sum                          5002                           int
+
+Instruction Table:
+Instruction Address            	OP                          OPRND
+----------------------------------------------------------------------------------
+    1                          POPM                          5002
+    2                         PUSHI                             0
+    3                          POPM                          5000
+    4                         PUSHI                             1
+    5                         STDIN                           nil
+    6                          POPM                             0
+    7                         LABEL                           nil
+    8                         PUSHM                          5000
+    9                           LES                           nil
+   10                         JUMPZ                            21
+   11                         PUSHM                          5001
+   12                          POPM                          5002
+   13                         PUSHM                          5002
+   14                         PUSHM                          5000
+   15                           ADD                           nil
+   16                          POPM                          5000
+   17                         PUSHM                          5000
+   18                         PUSHI                             1
+   19                           ADD                           nil
+   20                          JUMP                             7
+   21                         PUSHM                          5002
+   22                         PUSHM                          5001
+   23                           ADD                           nil
+   24                        STDOUT                           nil

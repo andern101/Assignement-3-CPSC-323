@@ -1,0 +1,2 @@
+int ax, b, cx;
+ax + b = cx

@@ -1,0 +1,22 @@
+File to be opened: sample2.txt
+Source Code:
+/* test */
+$$
+int c;
+c=4;
+put(c);
+$$
+
+
+Symbol Table:
+Lexeme                 	Memory Address                       Type
+----------------------------------------------------------------------------------
+    c                          5000                           int
+
+Instruction Table:
+Instruction Address            	OP                          OPRND
+----------------------------------------------------------------------------------
+    1                          POPM                          5000
+    2                         PUSHI                             4
+    3                         PUSHM                          5000
+    4                        STDOUT                           nil
